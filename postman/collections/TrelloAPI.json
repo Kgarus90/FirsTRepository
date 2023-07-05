@@ -86,7 +86,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "GetIdListInBoard",
 			"id": "ca09790d-435f-48b7-a153-0d4c00929dd8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -157,6 +157,132 @@
 						{
 							"key": "token",
 							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateOneList",
+			"id": "1173afb0-782b-4773-bbb8-e836959e0886",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists/64a597d60cc428b3ac670e84/?key={{key}}&token={{token}}&name=One List",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists",
+						"64a597d60cc428b3ac670e84",
+						""
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "name",
+							"value": "One List"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewCardOneList",
+			"id": "ba5b682c-692e-4a5d-af7f-76bfeccf5693",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=64a597d60cc428b3ac670e84&key={{key}}&token={{token}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "64a597d60cc428b3ac670e84"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "b79aa4be-6ccd-44d9-bbbf-48ecb2e620ce",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/64a59b02659270da34f6187b/?key={{key}}&token={{token}}&name=First Card&desc=description what you make find in this Card",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"64a59b02659270da34f6187b",
+						""
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "name",
+							"value": "First Card"
+						},
+						{
+							"key": "desc",
+							"value": "description what you make find in this Card",
+							"type": "text"
 						}
 					]
 				}
