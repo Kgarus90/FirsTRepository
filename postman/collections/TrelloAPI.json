@@ -244,7 +244,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "UpdateNewCardOneList",
 			"id": "b79aa4be-6ccd-44d9-bbbf-48ecb2e620ce",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -283,6 +283,86 @@
 							"key": "desc",
 							"value": "description what you make find in this Card",
 							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCheckListInNewCard",
+			"id": "c573a7f3-4c96-4c9a-9fb6-95e9a2292c93",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/checklists?idCard=64a59b02659270da34f6187b&key={{key}}&token={{token}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"checklists"
+					],
+					"query": [
+						{
+							"key": "idCard",
+							"value": "64a59b02659270da34f6187b"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCheckListItemInNewCard",
+			"id": "ca9ec048-b09c-49b0-9054-91f80d60e221",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/checklists/64a59d311c8302edcc43d68e/checkItems?name=First Check&key={{key}}&token={{token}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"checklists",
+						"64a59d311c8302edcc43d68e",
+						"checkItems"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "First Check"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
 						}
 					]
 				}
